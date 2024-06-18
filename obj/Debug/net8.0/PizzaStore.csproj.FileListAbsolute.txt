@@ -30,3 +30,7 @@ C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\obj\Debug\net8.0\refint\
 C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\obj\Debug\net8.0\PizzaStore.pdb
 C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\obj\Debug\net8.0\PizzaStore.genruntimeconfig.cache
 C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\obj\Debug\net8.0\ref\PizzaStore.dll
+C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\developer07.CAPISTRANO\source\repos\PizzaStore\obj\Debug\net8.0\PizzaStore.sourcelink.json
