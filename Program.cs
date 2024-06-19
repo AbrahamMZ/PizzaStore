@@ -17,6 +17,21 @@ builder.Services.AddSwaggerGen(c =>
    });
 });
 
+// 1) define a unique string
+string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+// 2) define allowed domains, in this case "http://example.com" and "*" = all
+//    domains, for testing purposes only.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+      builder =>
+      {
+          builder.WithOrigins(
+            "http://localhost:3000", "*");
+      });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -27,6 +42,10 @@ if (app.Environment.IsDevelopment())
       c.SwaggerEndpoint("/swagger/v1/swagger.json", "PizzaStore API V1");
    });
 }
+
+// 3) use the capability
+app.UseCors(MyAllowSpecificOrigins);
+
 
 app.MapGet("/pizzas", async (PizzaDb db) => await db.Pizzas.ToListAsync());
 app.MapPost("/pizza", async (PizzaDb db, Pizza pizza) =>
